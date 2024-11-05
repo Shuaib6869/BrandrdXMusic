@@ -71,7 +71,7 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
                 text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/LEGEND_HU_BSDK"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/+NTwvnbT1V2MwNzY1"
+                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/FRIENDS_CHATTING_ZONE_II"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -93,7 +93,7 @@ def stream_markup(_, videoid, chat_id):
                 text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/LEGEND_HU_BSDK"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/+NTwvnbT1V2MwNzY1"
+                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/FRIENDS_CHATTING_ZONE_II"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
