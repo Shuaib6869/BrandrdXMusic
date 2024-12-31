@@ -3,7 +3,7 @@ from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from IstkharXMusic import app
+from BrandrdXMusic import app
 
 LOGGER = getLogger(__name__)
 
@@ -44,13 +44,13 @@ def circle(pfp, size=(500, 500)):
 
 
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("IstkharXMusic/assets/Kr.png")
+    background = Image.open("BrandrdXMusic/assets/Kr.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
     pfp = pfp.resize((1157, 1158))
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('IstkharXMusic/assets/font.ttf', size=110)
-    welcome_font = ImageFont.truetype('IstkharXMusic/assets/font.ttf', size=60)
+    font = ImageFont.truetype('BrandrdXMusic/assets/font.ttf', size=110)
+    welcome_font = ImageFont.truetype('BrandrdXMusic/assets/font.ttf', size=60)
     draw.text((1800, 700), f'NAME: {user}', fill=(255, 255, 255), font=font)
     draw.text((1800, 830), f'ID: {id}', fill=(255, 255, 255), font=font)
     draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
@@ -135,9 +135,9 @@ async def greet_group(_, member: ChatMemberUpdated):
 ┣ 𝟓 ➥ 𝐆ɪᴠᴇ  ʀᴇsᴘᴇᴄᴛ , ᴛᴀᴋᴇ  ʀᴇsᴘᴇᴄᴛ 
 ┗━━━━━━━━━━━━━━━━━      
 
-❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ 𝐏ᴜʀᴠɪ ✘ 𝐌ᴜꜱɪᴄ
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ 𝐕ɪʟʟᴀɴ ✘ 𝐌ᴜꜱɪᴄ
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/purvi_music_bot?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/ViLLaiN_Music_bot?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
